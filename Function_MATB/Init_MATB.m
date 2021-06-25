@@ -6,15 +6,17 @@ global MATB_DATA
 % f=figure('position',[(ScrSize(3)/2)-(ScrSize(4)/2) 0 ScrSize(4) (ScrSize(3)/2)+(ScrSize(4)/2)],...,'windowstate','fullscreen'
 %     'menubar','none','numbertitle','off','resize','on');
 % % set(gcf,'position',[425         20        1100        1040]);
-figure('windowstate','fullscreen','color','k','menubar','none',...
-    'CloseRequestFcn',@CloseFigEmpty)
+
+% % Black screen behind
+% figure('windowstate','fullscreen','color','k','menubar','none','CloseRequestFcn',@CloseFigEmpty)
 
 %--------- MATB main figure -------
 MATB_DATA.MainFigurePosition=[ 428 32   1100  1020];
 f=figure('position',MATB_DATA.MainFigurePosition,...
     'menubar','none','numbertitle','off','resize','off',...
-    'visible','off','CloseRequestFcn',@CloseFigEmpty,...
-    'WindowKeyPressFcn',@Update_KEYBOARD);
+    'visible','off','WindowKeyPressFcn',@Update_KEYBOARD);
+% 'CloseRequestFcn',@CloseFigEmpty,...
+
 % f=figure('position',[425         20        1100        1020],...
 %     'menubar','none','numbertitle','off','resize','off');
 MATB_DATA.MainFigure=f;
