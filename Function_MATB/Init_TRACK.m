@@ -2,7 +2,11 @@
 function Init_TRACK
 global MATB_DATA
 
-subplot('Position',[0.48,0.53,0.4,0.4]); 
+track_fig = figure('menubar','none','numbertitle','off','resize','off');
+movegui(track_fig,'northeast');
+figure(track_fig)
+
+% subplot('Position',[0.48,0.53,0.4,0.4]); 
 % set(gca, 'DrawMode','fast'); % 'normal' is the default axes value
 
 ColorBar=[0 0.4470 0.7410];

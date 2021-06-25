@@ -1,7 +1,9 @@
 function Init_RESMAN
 global MATB_DATA
-
-subplot('Position',[0.35,0.05,0.6,0.4])
+resman_fig = figure('menubar','none','numbertitle','off','resize','off');
+movegui(resman_fig,'southwest');
+figure(resman_fig)
+% subplot('Position',[0.35,0.05,0.6,0.4])
 % set(gca, 'DrawMode','fast'); % 'normal' is the default axes value
 
 ColorBar=[0 0.4470 0.7410];

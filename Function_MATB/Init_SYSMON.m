@@ -1,7 +1,11 @@
 function Init_SYSMON
 global MATB_DATA
 
-subplot('Position',[0.05,0.5+0.05,0.30,0.4])
+mon_fig = figure('menubar','none','numbertitle','off','resize','off');
+movegui(mon_fig,'northwest');
+figure(mon_fig)
+
+% subplot('Position',[0.05,0.5+0.05,0.30,0.4])
 % set(gca, 'DrawMode','fast'); % 'normal' is the default axes value
 
 ColorBar2=[116/256 208/256 241/256];

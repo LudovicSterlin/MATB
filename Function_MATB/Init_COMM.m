@@ -1,7 +1,11 @@
 function Init_COMM
 global MATB_DATA
 
-subplot('Position',[0.17,0.4,0.05,0.05])
+com_fig = figure('menubar','none','numbertitle','off','resize','off');
+movegui(com_fig,'southeast');
+figure(com_fig)
+
+% subplot('Position',[0.17,0.4,0.05,0.05])
 % set(gca, 'DrawMode','fast'); % 'normal' is the default axes value
 
 [bs,r,ButtonGroup,ValueGroup]=Button_COMM();
