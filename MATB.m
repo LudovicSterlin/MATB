@@ -63,12 +63,12 @@ end
 
 for i=1:size(MATB_DATA.ScenarioType,2)
     MATB_Main(); 
-    Performance();
+    % Performance();
     MATB_DATA.ScenarioNumber=MATB_DATA.ScenarioNumber+1;
     
     pause(1)
-    pop_waiter(["FIN DE LA TACHE",... 
-        "(Appuyez sur la touche 'ENTREE' pour continuer)"],1);
+    % pop_waiter(["FIN DE LA TACHE",... 
+        % "(Appuyez sur la touche 'ENTREE' pour continuer)"],1);
     
     if MATB_DATA.ScenarioNumber > size(MATB_DATA.ScenarioType,2)
         break
