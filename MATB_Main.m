@@ -65,7 +65,7 @@ MATB_DATA.KeyboardAction{MATB_DATA.ScenarioNumber}=[];
 % KbQueueCreate(deviceIndex);
 % KbQueueStart(deviceIndex);
 
-set(MATB_DATA.MainFigure,'position',MATB_DATA.MainFigurePosition)
+% set(MATB_DATA.MainFigure,'position',MATB_DATA.MainFigurePosition)
 MATB_DATA.ScenarioStartedAt=Start;
 
 while true % Main GAME LOOP
@@ -81,7 +81,7 @@ while true % Main GAME LOOP
     
     % UPDATE ALL TASKS
     %     if t-MATB_DATA.LastUpdate.KB >= 0.0
-%     Update_KEYBOARD()
+    %     Update_KEYBOARD()
     Send_EyeTRACK()
 
     

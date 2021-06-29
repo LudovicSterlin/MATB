@@ -12,17 +12,17 @@ global MATB_DATA
 
 %--------- MATB main figure -------
 MATB_DATA.MainFigurePosition=[ 428 32   1100  1020];
-f=figure('position',MATB_DATA.MainFigurePosition,...
-    'menubar','none','numbertitle','off','resize','off',...
-    'visible','off','WindowKeyPressFcn',@Update_KEYBOARD);
+% f=figure('position',MATB_DATA.MainFigurePosition,...
+%     'menubar','none','numbertitle','off','resize','off',...
+%     'visible','off','WindowKeyPressFcn',@Update_KEYBOARD);
 % 'CloseRequestFcn',@CloseFigEmpty,...
 
 % f=figure('position',[425         20        1100        1020],...
 %     'menubar','none','numbertitle','off','resize','off');
-MATB_DATA.MainFigure=f;
+% MATB_DATA.MainFigure=f;
 % f.Color=[1 1 1];
 
-set(f, 'Renderer','painters'); % Note: this is a figure property
+% set(f, 'Renderer','painters'); % Note: this is a figure property
 
 %--------- Initialize all the Subtasks
 Init_TRACK()
@@ -30,5 +30,5 @@ Init_SYSMON()
 Init_RESMAN()
 Init_COMM()
 
-drawnow; set(f,'visible','on');
+% drawnow; set(f,'visible','on');
 % KbName('UnifyKeyNames');
