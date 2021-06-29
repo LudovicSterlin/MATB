@@ -2,7 +2,7 @@
 function Init_TRACK
 global MATB_DATA
 
-track_fig = figure('menubar','none','numbertitle','off','resize','off');
+track_fig = figure('menubar','none','numbertitle','off');
 movegui(track_fig,'northeast');
 figure(track_fig)
 

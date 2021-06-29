@@ -1,7 +1,7 @@
 function Init_SYSMON
 global MATB_DATA
 
-mon_fig = figure('menubar','none','numbertitle','off','resize','off');
+mon_fig = figure('menubar','none','numbertitle','off');
 movegui(mon_fig,'northwest');
 figure(mon_fig)
 

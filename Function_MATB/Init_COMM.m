@@ -1,14 +1,16 @@
 function Init_COMM
 global MATB_DATA
 
-com_fig = figure('menubar','none','numbertitle','off','resize','off');
-movegui(com_fig,'southeast');
+com_fig = figure('menubar','none','numbertitle','off', 'position', [-280 901 1500 700]);
+movegui(com_fig,'southwest');
 figure(com_fig)
+
+% get(0, 'MonitorPositions') 
 
 % subplot('Position',[0.17,0.4,0.05,0.05])
 % set(gca, 'DrawMode','fast'); % 'normal' is the default axes value
 
-[bs,r,ButtonGroup,ValueGroup]=Button_COMM();
+[bs,r,ButtonGroup,ValueGroup]=Button_COMM(com_fig);
 MATB_DATA.COMM.HandleButtonGroup    = bs; 
 MATB_DATA.COMM.HandleRadioButton    = r;
 MATB_DATA.COMM.HandlePlusMinus      = ButtonGroup;

@@ -1,7 +1,8 @@
 function Init_RESMAN
 global MATB_DATA
-resman_fig = figure('menubar','none','numbertitle','off','resize','off');
-movegui(resman_fig,'southwest');
+resman_fig = figure('menubar','none','numbertitle','off');
+% "Position", [0 0 700 700]);
+movegui(resman_fig,'southeast');
 figure(resman_fig)
 % subplot('Position',[0.35,0.05,0.6,0.4])
 % set(gca, 'DrawMode','fast'); % 'normal' is the default axes value
@@ -68,8 +69,8 @@ h_NIV(5)=fill(10+[1.1 1.1 2.9 2.9],[1.1 4 4 1.1],[0 1 0],'linestyle','none');
 h_NIV(6)=fill(10+[6.1 6.1 8.9 8.9],[1.1 6 6 1.1],[0 1 0],'linestyle','none');
 
 faulty_pmp=zeros(8,1);
-f=MATB_DATA.MainFigure;
-[pmp]=Button_RESMAN(f);
+% f=MATB_DATA.MainFigure;
+[pmp]=Button_RESMAN(resman_fig);
 % [pmp]=Button_RESMAN(MATB_DATA);
 
 xlim([0 20]); ylim([0 20])
